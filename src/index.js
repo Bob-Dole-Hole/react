@@ -24,6 +24,25 @@ class TimeDisplay extends React.Component {
 
 }
 
+class ScoreCounter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            score: 0,
+        }
+    }
+
+    render() {
+        return (
+            <div className="scorecounter">
+                {this.state.score}
+            </div>
+            );
+    }
+
+    
+}
+
 class Square extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +56,7 @@ class Square extends React.Component {
     }
 
     render() {
-        
+
         return (
             <button className="square" onClick={() => { console.log('click'); this.setState({ moleValue: "" }); this.setState({ state: this.state }); }}>
                 {this.state.moleValue}
@@ -48,11 +67,9 @@ class Square extends React.Component {
 
 class Board extends React.Component {
 
-
-    //randomizeSquares
-
     renderSquare() {
-        return <Square />;
+       let sqr = <Square />;
+        return sqr;
     }
 
     render() {
