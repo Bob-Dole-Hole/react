@@ -13,7 +13,6 @@ class TimeDisplay extends React.Component {
 
     render() {
         const timeStartMsg = "Start time: ";
-        const timeEndMsg = "Finish time: ";
 
         return (
             <div className="timedisplay">
