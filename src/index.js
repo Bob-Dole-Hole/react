@@ -39,7 +39,7 @@ class Square extends React.Component {
     render() {
         
         return (
-            <button className="square" onClick={() => { console.log('click'); this.state.moleValue = ""; this.setState({ state: this.state }); }}>
+            <button className="square" onClick={() => { console.log('click'); this.setState({ moleValue: "" }); this.setState({ state: this.state }); }}>
                 {this.state.moleValue}
             </button>
         );
