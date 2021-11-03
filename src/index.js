@@ -24,25 +24,6 @@ class TimeDisplay extends React.Component {
 
 }
 
-class ScoreCounter extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            score: 0,
-        }
-    }
-
-    render() {
-        return (
-            <div className="scorecounter">
-                {this.state.score}
-            </div>
-            );
-    }
-
-    
-}
-
 class Square extends React.Component {
     constructor(props) {
         super(props);
